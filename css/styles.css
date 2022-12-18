@@ -1,4 +1,5 @@
 :root {
+  --main-title-colour: #434455;
   --accent-color: #4d5ae5;
   --first-title-color: #2e2f42;
   --second-title-color: #ffffff;
@@ -12,7 +13,7 @@
 }
 
 body {
-  color: #434455;
+  color: var(--main-title-colour);
   font-family: "Roboto", sans-serif;
   background: var(--firsf-background-color);
 }
@@ -21,8 +22,6 @@ body {
 }
 .header-logo {
   text-decoration: none;
-}
-.logo-text {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -31,13 +30,9 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
 }
+.logo-text {
+}
 .logo-text-studio {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: calc(24 / 18);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--first-title-color);
 }
 .header-navigation {
@@ -60,7 +55,7 @@ body {
   color: var(--first-title-color);
 }
 .nav-link:hover {
-  color: #434455;
+  color: var(--main-title-colour);
 }
 .nav-link:focus {
   color: var(--accent-color);
@@ -71,24 +66,20 @@ body {
 .header-contact-item {
 }
 .header-mail-link {
-  font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: #434455;
+  color: inherit;
 }
 .header-mail-link:hover,
 .header-mail-link:focus {
   color: var(--accent-color);
 }
 .header-phone-link {
-  font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: #434455;
+  color: inherit;
 }
 .header-phone-link:hover,
 .header-phone-link:focus {
@@ -102,13 +93,13 @@ body {
   background-color: var(--second-background-color);
 }
 .solution-title {
-  font-weight: 500;
   font-size: 56px;
   line-height: calc(60 / 56);
   letter-spacing: 0.02em;
   color: var(--second-title-color);
 }
 .service-btn {
+  font-family: inherit;
   background: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
@@ -117,9 +108,7 @@ body {
   color: var(--second-title-color);
   cursor: pointer;
 }
-.service-btn:hover {
-  background: var(--accent-color);
-}
+
 .service-btn:focus {
   background: var(--second-btn-color);
 }
@@ -131,7 +120,6 @@ body {
 .advantages-item {
 }
 .advantures-desc {
-  font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
@@ -145,7 +133,6 @@ body {
 .section-activity {
 }
 .activity-title {
-  font-weight: 500;
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -163,7 +150,6 @@ body {
   background: var(--third-background-color);
 }
 .team-title {
-  font-weight: 500;
   font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -173,11 +159,11 @@ body {
 .team-list {
 }
 .team-item {
+  background: var(--firsf-background-color);
 }
 .team-image {
 }
 .team-desc-title {
-  font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
@@ -196,8 +182,6 @@ body {
 }
 .footer-logo {
   text-decoration: none;
-}
-.logo-text-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -206,13 +190,8 @@ body {
   text-transform: uppercase;
   color: var(--accent-color);
 }
+
 .logo-footer-studio {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: calc(21 / 18);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--studio-color);
 }
 .footer-text {
@@ -292,7 +271,6 @@ body {
 .portfolio-link {
 }
 .portfolio-image-desc {
-  font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
@@ -302,6 +280,7 @@ body {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
+  color: var(--main-title-colour);
 }
 .footer {
 }
